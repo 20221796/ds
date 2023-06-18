@@ -4,7 +4,7 @@ import bellmanford as bf
 
 if __name__ == '__main__':
     start_v = 0
-    files = ["graph_pos.txt", "graph_neg.txt"]
+    files = ["ds/src/ds_2023-main/fsp/graph_pos.txt", "ds/src/ds_2023-main/fsp/graph_neg.txt"]
 
     # Find shortest path with Dijkstra algorithm
     print("------------------------------------------")
@@ -17,6 +17,7 @@ if __name__ == '__main__':
         fsp.initialize()
         fsp.find_path(start_v)
         fsp.print_path(start_v)
+        print()
 
     # Find shortest path with Bellman-Ford algorithm
     print("---------------------------------------------")
@@ -31,3 +32,4 @@ if __name__ == '__main__':
         fsp.initialize()
         fsp.find_path(start_v)
         fsp.print_path(start_v)
+        print()
